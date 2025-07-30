@@ -1,0 +1,46 @@
+.admin-sidebar {
+  position: relative;
+}
+
+.list-group {
+  /* Base styles that apply to both desktop and mobile */
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease;
+}
+
+/* Mobile styles */
+@media (max-width: 992px) {
+  .navbar-toggler {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .list-group {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    display: block !important; /* Override any Bootstrap hiding */
+  }
+  
+  .list-group.show {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none;
+  }
+  
+  .list-group {
+    /* Reset all mobile styles */
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+}

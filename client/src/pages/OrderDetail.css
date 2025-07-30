@@ -1,0 +1,128 @@
+/* Timeline styles */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #e9ecef;
+}
+
+.timeline-item:last-child {
+  border-left-color: transparent;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -8px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #0d6efd;
+}
+
+.timeline-content {
+  position: relative;
+  padding: 10px 0;
+}
+
+.timeline-content h6 {
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+
+/* Service list styles */
+.service-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #e9ecef;
+  transition: all 0.2s ease;
+  box-shadow: none !important;
+}
+
+.service-item:hover {
+  background-color: #f8f9fa;
+}
+
+.service-item.completed {
+  background-color: #e8f5e9;
+  border-left: 3px solid #28a745;
+}
+
+.service-item .service-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.service-item .service-status {
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+}
+
+.service-item .service-status,
+.service-item.completed .service-status {
+  border-radius: 30px;
+}
+
+/* Card styles */
+.card {
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 0;
+}
+
+/* Status badges */
+.badge {
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hvr-float-shadow {
+  background-color: #fff;
+  border-bottom: 3px solid #ee0d09;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 20px;
+  }
+  
+  .service-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .service-item .service-status {
+    align-self: flex-end;
+  }
+}

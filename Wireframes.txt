@@ -1,0 +1,31 @@
+🌐 Navigation Wireframe:
+🔷 Public (Root Level)
+
+/                  → Home         ✅ (default landing page)
+/about             → About Us
+/services          → Services
+/contact           → Contact Us
+/login             → Login
+/dashboard         → Dashboard  (visible only if logged in)
+📝 Notes:
+The Order Details page (/order/{orderHash}) exists but not in the menu.
+
+🔷 Admin (Login Required)
+📁 Admin Section
+/admin                  → Dashboard
+/admin/employees        → Employees List
+/admin/add-employee     → Add Employee
+/admin/employee/edit/:id → Edit Employee
+
+/admin/customers        → Customers List
+/admin/add-customer     → Add Customer
+/admin/customer/edit/:id → Edit Customer
+/admin/customer/{id}     → Customer Details
+   └── Add Vehicle (shown only inside Customer Details page)
+
+/admin/orders           → Orders List
+/admin/order            → Add Order
+/admin/order/{hash}/edit → Edit Order
+
+/admin/services         → Services List
+/admin/add-service      → Add Service

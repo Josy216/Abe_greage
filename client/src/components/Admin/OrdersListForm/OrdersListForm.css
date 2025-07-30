@@ -1,0 +1,55 @@
+.orders-list-container {
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+.orders-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.orders-table {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table thead th {
+  background-color: #f1f3f5;
+  border-bottom: 2px solid #dee2e6;
+  font-weight: 600;
+  text-align: left;
+}
+
+.orders-table tbody td {
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+.orders-table tbody tr:hover {
+  background-color: #f1f3f5;
+}
+
+.orders-table td > div {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.view-edit-icons .icon {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  color: #495057;
+}
+
+.view-edit-icons .icon:hover {
+  color: #007bff;
+}
+
+.badge {
+  padding: 0.5em 0.75em;
+  font-size: 0.85em;
+  font-weight: 600;
+}
